@@ -1,5 +1,5 @@
-# Wumpus World DQL Agent
 
+# Wumpus World DQL Agent
 ## Project Overview
 This project represents the final assignment for the Intelligent Systems course, implementing a Deep Q-Learning (DQL) agent to navigate the classic Wumpus World environment. The agent learns to find gold while avoiding dangers like pits and the Wumpus through reinforcement learning.
 
@@ -8,9 +8,11 @@ The Wumpus World is represented as a 10x10 grid where:
 - 🏁 Starting position is fixed at (3,3)
 - 🏆 Gold is the target reward
 - 😈 Wumpus and pits are deadly obstacles
-- 🌀 Breezes indicate nearby pits 
+- 🌀 Breezes indicate nearby pits
 - 🦨 Stenches indicate nearby Wumpus
 - ✨ Flashes indicate nearby gold
+
+![Environment and Score Representation](img/wumpus1.png)
 
 ## Features
 - Deep Q-Network (DQN) implementation with 6 neural network layers
@@ -40,7 +42,6 @@ Run the main script to start training:
 ```python
 python wumpus_dql.py
 ```
-
 The program will display:
 - Real-time training progress
 - Success rate statistics
@@ -48,11 +49,19 @@ The program will display:
 - Death count
 - Visualization plots
 
-## Training Visualization
-The code generates three plots:
-1. Victory rate over episodes
-2. Step count per episode
-3. Death count per episode
+# Training Visualization
+The code generates three plots showing the agent's learning progress:
+
+![Success Rate per Episode](img/wumpus2.png)
+*Graph showing the success rate of outcomes per episode*
+
+![Steps per Runtime](img/wumpus3.png)
+*Graph showing the number of steps per runtime*
+
+![Deaths per Runtime](img/wumpus4.png)
+*Graph showing the number of deaths per runtime*
+
+[Rest of the README remains unchanged...]
 
 ## Credits and References
 This implementation draws from several key sources:
