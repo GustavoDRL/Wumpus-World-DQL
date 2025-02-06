@@ -61,8 +61,6 @@ The code generates three plots showing the agent's learning progress:
 ![Deaths per Runtime](img/wumpus4.png)
 *Graph showing the number of deaths per runtime*
 
-[Rest of the README remains unchanged...]
-
 ## Credits and References
 This implementation draws from several key sources:
 
